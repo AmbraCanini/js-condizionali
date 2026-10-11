@@ -1,11 +1,11 @@
 
 //esercizio let e if/else
-let ora = 20
+//let ora = 20
 
-if (ora <= 12) console.log("Buongiorno");
-else if (ora <= 18) console.log("Buon pomeriggio");
-else if (ora <= 22) console.log("Buonasera");
-else console.log("Notte")
+//if (ora <= 12) console.log("Buongiorno");
+//else if (ora <= 18) console.log("Buon pomeriggio");
+//else if (ora <= 22) console.log("Buonasera");
+//else console.log("Notte")
 
 
 //esercizio math random
@@ -27,8 +27,23 @@ else console.log("Notte")
 
 
 //esercizio number e prompt
-let numero = Number(prompt("Inserisci un numero", 10));
-if (numero >= 60)
-    console.log("sei un/a grande!");
-else
-    console.log(`Ritenta!` + numero);
+//let numero = Number(prompt("Inserisci un numero", 10));
+//if (numero >= 60)
+//    console.log("sei un/a grande!");
+//else
+//    console.log(`Ritenta!` + numero);
+
+
+//esercizio if nested
+let eta = 19
+let biglietto = true
+
+if (eta >= 18) {
+    if (biglietto == true)
+        console.log("benvenuto")
+    else
+        console.log("Non puoi entrare")
+} else {
+    console.log("Sei minorenne!")
+}
+
