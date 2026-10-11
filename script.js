@@ -75,8 +75,8 @@ else {
 let luceaccesa = true
 let personepresenti = true
 
-if (luceaccesa && personepresenti) {
-    console.log("La stanza è occupata")
+if (luceAccesa === true && personePresenti === true) {
+    console.log("Stanza occupata");
 }
 if (luceAccesa === false && personePresenti === false) {
     console.log("Stanza libera");
