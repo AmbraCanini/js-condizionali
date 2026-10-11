@@ -60,3 +60,12 @@ if (codice === 1234) {
 else {
     console.log("Confronto stretto: tipo diverso, non sono uguali");
 }
+
+//Valori falsy e condizioni reali
+
+let nome = prompt("Inserisci il nome")
+if (nome) {
+    console.log("Ciao" + nome)
+} else {
+    console.log("errore")
+}
