@@ -47,3 +47,16 @@ if (eta >= 18) {
     console.log("Sei minorenne!")
 }
 
+//operatori binari e confronto
+
+let codice = "1234"
+
+if (codice == "1234") {
+    console.log("confronto debole sono considerati uguali");
+}
+if (codice === 1234) {
+    console.log("Confronto maggiore e non sono uguali");
+}
+else {
+    console.log("Confronto stretto: tipo diverso, non sono uguali");
+}
