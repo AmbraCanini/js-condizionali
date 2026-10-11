@@ -63,9 +63,22 @@ else {
 
 //Valori falsy e condizioni reali
 
-let nome = prompt("Inserisci il nome")
-if (nome) {
-    console.log("Ciao" + nome)
-} else {
-    console.log("errore")
+//let nome = prompt("Inserisci il nome")
+//if (nome) {
+//    console.log("Ciao" + nome)
+//} else {
+//    console.log("errore")
+//}
+
+//Operatori logici combinati
+
+let luceaccesa = true
+let personepresenti = true
+
+if (luceaccesa && personepresenti) {
+    console.log("La stanza è occupata")
 }
+if (luceAccesa === false && personePresenti === false) {
+    console.log("Stanza libera");
+}
+
