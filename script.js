@@ -35,17 +35,17 @@
 
 
 //esercizio if nested
-let eta = 19
-let biglietto = true
+//let eta = 19
+//let biglietto = true
 
-if (eta >= 18) {
-    if (biglietto == true)
-        console.log("benvenuto")
-    else
-        console.log("Non puoi entrare")
-} else {
-    console.log("Sei minorenne!")
-}
+//if (eta >= 18) {
+//    if (biglietto == true)
+//        console.log("benvenuto")
+//    else
+//        console.log("Non puoi entrare")
+//} else {
+//    console.log("Sei minorenne!")
+//}
 
 //operatori binari e confronto
 
@@ -72,13 +72,37 @@ else {
 
 //Operatori logici combinati
 
-let luceaccesa = true
-let personepresenti = true
+//let luceaccesa = true
+//let personepresenti = true
 
-if (luceAccesa === true && personePresenti === true) {
-    console.log("Stanza occupata");
+//if (luceAccesa === true && personePresenti === true) {
+//    console.log("Stanza occupata");
+//}
+//if (luceAccesa === false && personePresenti === false) {
+//    console.log("Stanza libera");
+//}
+
+//esercizio finale
+let nome = prompt("come ti chiami?", "Ambra")
+let eta = Number(prompt("Inserisci la tua eta", "30"))
+let numeroCasuale = Math.floor(Math.random() * 101);
+let messaggio = "Nome mancante";
+
+if (nome) {
+    messaggio = "Ciao" + nome
 }
-if (luceAccesa === false && personePresenti === false) {
-    console.log("Stanza libera");
+if (eta >= 18) {
+    messaggio = messaggio + " - maggiorenne";
+}
+else {
+    messaggio = messaggio + " - minorenne";
 }
 
+
+if (numeroCasuale >= 90 || eta >= 60) {
+    console.log("hai pescato un numero fotunato")
+} else {
+    console.log("numero non fortunato")
+}
+
+console.log(messaggio);
